@@ -12,8 +12,8 @@ import Logo from '../assets/logo.svg'
 export default function Home() {
 // Created State to filter school data
     const [search,setSearch] = useState("");
-    const [schools, setSchool] = useState([])
-    const [filteredData, setFilteredData] = useState([])
+    const [schools, setSchool] = useState<any[]>([])
+    const [filteredData, setFilteredData] = useState<any[]>([])
 
 // Fetches API data and renders data in alphabetical order
     useEffect(()=>{
